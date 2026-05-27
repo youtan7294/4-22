@@ -1,12 +1,9 @@
 function setup() {
-    createCanvas(400, 400);
+    createCanvas(1000, 1000);
 }
 
-function draw() {
+function draw(){
     background(220);
-fill("");
-    circle(200,200,300
+    circle(width/2, height/2,50
     );
-fill("yellow")
 }
-
