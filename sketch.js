@@ -1,26 +1,18 @@
 let x;
+let y;
 
 function setup() {
-  createCanvas(1000, 1000);
-  x=0;
+  createCanvas(300, 300);
+  x = 200;
+  y = 200;
 }
 
 function draw(){
-    background(400);
-    circle(width/2, height/2,50
-    );
-
-    x=x+20;
-    if(x>width){
-       x=0;
+    background(0,200,random(200),20);
+    y = y + 1;
+    if(y>height){
+      y = 0;
     }
-circle(x,250,50)
-textSize(100);
-textAlign(CENTER,CENTER)
-text("よろしく",500,500)
-
-
-
-
-
+  for(let i =0; i<5; i++)
+  circle(i*100,y,random(50))
 }
